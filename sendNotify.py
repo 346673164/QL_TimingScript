@@ -254,8 +254,7 @@ def pushplus_bot(title, content):
         data = {
             "token": PUSH_PLUS_TOKEN,
             "title": title,
-            "content": content,
-            "channel": "extension"
+            "content": content
         }
         body = json.dumps(data).encode(encoding='utf-8')
         headers = {'Content-Type': 'application/json'}
